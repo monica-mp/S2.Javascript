@@ -6,13 +6,9 @@ function promesa(){
     });
 }
 
-async function funcioAsincrona(){
-  try{
+async function funcioAsincrona(){ 
     const result = await promesa();
-    console.log(result);
-  } catch(error){
-      console.error(error);
-  }
+    console.log(result); 
 }
 
 funcioAsincrona();
